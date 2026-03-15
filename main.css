@@ -23,7 +23,8 @@ body{
     }
 
     button:hover{
-    cursor: pointer;
+        cursor: pointer;
+        color: black;
     }
 
 }
@@ -184,6 +185,7 @@ button{
     padding: 8px 12px;
     font-weight: bold;
     background-color: white;
+    color: black;
     transition: 0.2s;
 }
 
