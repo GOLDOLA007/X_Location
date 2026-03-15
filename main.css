@@ -22,6 +22,10 @@ body{
         max-width: 400px;
     }
 
+    button:hover{
+    cursor: pointer;
+    }
+
 }
 
 a{
