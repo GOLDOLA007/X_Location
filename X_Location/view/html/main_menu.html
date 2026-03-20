@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>X_Location - MAIN MENU</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main_menu.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src='../js/main.js'></script>
+</head>
+<body>
+        <form>
+            <div class="container_MainMenu">
+                <div class="box_1_MainMenu">
+
+                   <div class="header_MainMenu">
+                        <h2 class="h2_MainMenu">My Routes</h2>
+                        <a href="index.html" class="logout">Logout</a>
+                    </div>
+
+                    <input type="text" placeholder="Search a route...">
+
+                    <div id="dynamicButtons"></div>
+
+                    <div class="box_2_MainMenu">
+                        <h3 class="empty_title">No routes yet</h3>
+                        <p class="empty_sub">Start by creating your first route</p>
+                    </div>
+
+                    <div class="bottom_actions">
+                        <button><i class="fa-solid fa-clock"></i> History</button>
+                        <button><i class="fa-solid fa-route"></i> Routes</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+</body>
+</html>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function(){
+
+    new_addBtnInsert.reset_count();
+
+    let count = new_addBtnInsert.get_count();
+
+    let container = document.getElementById("dynamicButtons");
+    let message = document.getElementById("emptyMessage");
+
+    let addBtn = document.createElement("button");
+    addBtn.className = "add_route_btn";
+    addBtn.type = "submit";
+    addBtn.setAttribute("formaction", "insert_aRote_page.html");
+
+    let addIcon = document.createElement("i");
+    addIcon.className = "fa-solid fa-plus";
+
+    addBtn.appendChild(addIcon);
+    addBtn.append(" Add Route");
+
+    container.appendChild(addBtn);
+
+    if(count === 0){
+
+        message.style.display = "block";
+
+    }else{
+
+        message.style.display = "none";
+
+    }
+
+    for(let i = 0; i < count; i++){
+
+        let routeBtn = document.createElement("button");
+
+        routeBtn.className = "route_card";
+        routeBtn.type = "button";
+
+        let icon = document.createElement("i");
+        icon.className = "fa-solid fa-route";
+
+        routeBtn.appendChild(icon);
+        routeBtn.append(" Route " + (i+1));
+
+        container.appendChild(routeBtn);
+
+    }
+
+});
+</script>

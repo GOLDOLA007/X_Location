@@ -1,0 +1,80 @@
+.container_MainMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box_1_MainMenu{
+    text-align: center;
+    width: 700px;
+    min-height: 500px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.box_2_MainMenu{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.header_MainMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logout {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.route_card {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.empty_title {
+    color: white;
+    font-size: 22px;
+}
+
+.empty_sub {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+
+.bottom_actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bottom_actions button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#dynamicButtons {
+    max-height: 250px;
+    padding: 1%;
+    overflow-y: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.h2_MainMenu{
+    color: #fff;
+}
