@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+input {
+    width: 94%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 0 3px rgba(42,82,152,0.1);
+}
+a{
+    color: rgba(0, 0, 0, 0.822);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.section {
+    width: 92%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f7f9fc;
+}
+
+.header_insert {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.header_insert a {
+    color: #2a5298;
+    font-weight: bold;
+}
+
+.page_sub {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.section input {
+    margin-top: 10px;
+}
+
